@@ -1,10 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  templateUrl: './views/home.html',
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
   title = 'Manguito';
+  emprendimientos: string[];
+  constructor(){
+    this.emprendimientos = ['emprendimiento1', 'emprendimiento2', 'emprendimiento3']
+  }  
+ngOnInit(){
+}
 }
