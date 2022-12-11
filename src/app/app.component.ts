@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './views/home.html',
+  templateUrl: './home.html',
 })
 export class AppComponent implements OnInit{
   title = 'Manguito';
